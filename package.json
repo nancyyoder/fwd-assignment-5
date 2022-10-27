@@ -1,0 +1,20 @@
+{
+  "name": "fwd-assignment-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nancyyoder/fwd-assignment-5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nancyyoder/fwd-assignment-5/issues"
+  },
+  "homepage": "https://github.com/nancyyoder/fwd-assignment-5#readme",
+  "dependencies": {
+    "p5": "^1.5.0",
+    "parcel": "^2.7.0"
+  }
+}
