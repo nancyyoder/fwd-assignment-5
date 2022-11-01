@@ -532,12 +532,28 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"bDbGG":[function(require,module,exports) {
-console.log("hello nancy");
+console.log("here");
+const rows = 20;
+const columns = 20;
+const padding = 50;
+const cell_size = 25;
+const cell_color = "black";
 function setup() {
-    createCanvas(200, 200);
+    var cnv = createCanvas(600, 600);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
 }
 function draw() {
-    ellipse(50, 50, 80, 80);
+    background(255, 204, 0);
+    noStroke();
+    fill(cell_color);
+    for(let col = 0; col < columns; col++)for(let row = 0; row < rows; row++){
+        let left = padding + col * cell_size;
+        let top = padding + row * cell_size;
+        let size_real = cell_size - 2;
+        rect(left, top, size_real, size_real);
+    }
 }
 
 },{}]},["3Unyy","bDbGG"], "bDbGG", "parcelRequireeee0")
